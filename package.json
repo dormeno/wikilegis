@@ -1,7 +1,7 @@
 {
   "name": "wikilegis",
   "version": "0.1.0",
-  "description": "Tu herramienta para legislacion colaborativa",
+  "description": "Tu herramienta para edición legislativaa",
   "main": "index.js",
   "scripts": {
     "lint": "eslint wikilegis/static/javascript/**/*"
