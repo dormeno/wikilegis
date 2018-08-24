@@ -17,27 +17,27 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='user',
             name='groups',
-            field=models.ManyToManyField(blank=True, help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.', related_name='user_set', related_query_name='user', to='auth.Group', verbose_name='groups'),
+            field=models.ManyToManyField(blank=True, help_text='Los grupos a los que pertenece este usuario. Un usuario obtendrá todos los permisos concedidos a cada uno de sus grupos.', related_name='user_set', related_query_name='user', to='auth.Group', verbose_name='groups'),
         ),
         migrations.AddField(
             model_name='user',
             name='is_staff',
-            field=models.BooleanField(default=False, help_text='Designates whether the user can log into this admin site.', verbose_name='staff status'),
+            field=models.BooleanField(default=False, help_text='Indica si el usuario puede iniciar sesión en este sitio de administración.', verbose_name='staff status'),
         ),
         migrations.AddField(
             model_name='user',
             name='is_superuser',
-            field=models.BooleanField(default=False, help_text='Designates that this user has all permissions without explicitly assigning them.', verbose_name='superuser status'),
+            field=models.BooleanField(default=False, help_text='Designa que este usuario tiene todos los permisos sin asignarlos explícitamente.', verbose_name='superuser status'),
         ),
         migrations.AddField(
             model_name='user',
             name='user_permissions',
-            field=models.ManyToManyField(blank=True, help_text='Specific permissions for this user.', related_name='user_set', related_query_name='user', to='auth.Permission', verbose_name='user permissions'),
+            field=models.ManyToManyField(blank=True, help_text='Permisos específicos para este usuario.', related_name='user_set', related_query_name='user', to='auth.Permission', verbose_name='user permissions'),
         ),
         migrations.AddField(
             model_name='user',
             name='username',
-            field=models.CharField(blank=True, help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.', max_length=150, null=True, verbose_name='username'),
+            field=models.CharField(blank=True, help_text='Requerido. 150 caracteres o menos. Letras, dígitos y @/./+/-/_ solamente.', max_length=150, null=True, verbose_name='username'),
         ),
         migrations.AlterField(
             model_name='user',
@@ -47,6 +47,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='user',
             name='is_active',
-            field=models.BooleanField(default=True, help_text='Designates whether this user should be treated as active. Unselect this instead of deleting accounts.', verbose_name='active'),
+            field=models.BooleanField(default=True, help_text='Designa si este usuario debe ser tratado como activo. Deseleccione esta opción en lugar de borrar cuentas.', verbose_name='active'),
         ),
     ]
