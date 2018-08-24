@@ -14,13 +14,13 @@ class UpdateUserAuthorization(Authorization):
             raise Unauthorized(_('Missing api key'))
 
     def update_list(self, object_list, bundle):
-        raise Unauthorized(_('You cannot perform this action'))
+        raise Unauthorized(_('No puede realizar esta acción'))
 
     def update_detail(self, object_list, bundle):
         return self.api_key_is_valid(bundle)
 
     def delete_list(self, object_list, bundle):
-        raise Unauthorized(_('You cannot perform this action'))
+        raise Unauthorized(_('No puede realizar esta acción'))
 
     def delete_detail(self, object_list, bundle):
         return self.api_key_is_valid(bundle)
