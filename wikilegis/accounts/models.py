@@ -11,8 +11,8 @@ class User(AbstractUser):
         max_length=150,
         null=True,
         blank=True,
-        help_text=_('Required. 150 characters or fewer. Letters, '
-                    'digits and @/./+/-/_ only.')
+        help_text=_('Requerido. 150 caracteres o menos. Letras,  '
+                    'dígitos y @/./+/-/_ solamente.')
     )
     email = models.EmailField(_('email address'), unique=True)
 
